@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Practice Problem Solving/title>
+    <title>Practice Problem Solving</title>
 </head>
 <!--     1. understand the problem-->
 <!--    Write a function which takes in a string and returns counts of each character in the string.-->
@@ -23,8 +23,25 @@
 <!--            simple: count(Chars("aaaa")=> {a : 4}-->
 
 <!--            complex: countChars("hello hey!") => {a :10}-->
+        function countChars(string) {
+<!--            //make a bucket object-->
+            let charCount = {};
+<!--            // loop through the string to get chars-->
+            for (let char of str) {
 
-
+<!--            // Check if char is alphanumeric-->
+<!--            // if it is, add to obj-->
+<!--                lowercase each char-->
+                if (!charCount[char]} {
+                charCount[char} = 1;
+                } else {
+                    charCount[char]++;
+                }
+                }
+<!--            // return obj-->
+                return charCount;
+            }
+            console.log(countChars("hello"));
 <body>
 
 </body>
